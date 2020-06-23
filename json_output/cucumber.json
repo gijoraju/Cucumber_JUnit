@@ -1,0 +1,130 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 2,
+        "name": "Deals Creation",
+        "description": "",
+        "id": "crm-deals-test;deals-creation",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 4,
+            "name": "user is already in Login page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "user title of login page is crm",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters username and password",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "gijoraju@gmail.com",
+                  "Summer800!"
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "user is on Homepage",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "user clicks on deals",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "user clicks on new",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 12,
+            "name": "user enters deal details",
+            "match": {},
+            "rows": [
+              {
+                "cells": [
+                  "Cucum001",
+                  "100",
+                  "100"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "Cucum002",
+                  "200",
+                  "200"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 16,
+            "name": "clicks on save",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CRM Deals Test",
+    "description": "",
+    "id": "crm-deals-test",
+    "keyword": "Feature",
+    "uri": "C:/Users/user/eclipse-workspace/CucumberFramework/src/main/java/Features/deal.feature"
+  }
+]
