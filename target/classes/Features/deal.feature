@@ -10,7 +10,5 @@ And user is on Homepage
 Then user clicks on deals
 Then user clicks on new
 Then user enters deal details
-|Cucum001|100|100|
-|Cucum002|200|200|
-
+|BDD01|100|100|
 Then clicks on save

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="1" tests="1" time="0">
-<testcase classname="CRM Deals Test" name="Deals Creation" time="0">
-<skipped><![CDATA[Given user is already in Login page.........................................undefined
-When user title of login page is crm........................................undefined
-Then user enters username and password......................................undefined
-Then user clicks on login button............................................undefined
-And user is on Homepage.....................................................undefined
-Then user clicks on deals...................................................undefined
-Then user clicks on new.....................................................undefined
-Then user enters deal details...............................................undefined
-Then clicks on save.........................................................undefined
-]]></skipped>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="36.879002">
+<testcase classname="CRM Deals Test" name="Deals Creation" time="36.879002">
+<system-out><![CDATA[Given user is already in Login page.........................................passed
+When user title of login page is crm........................................passed
+Then user enters username and password......................................passed
+Then user clicks on login button............................................passed
+And user is on Homepage.....................................................passed
+Then user clicks on deals...................................................passed
+Then user clicks on new.....................................................passed
+Then user enters deal details...............................................passed
+Then clicks on save.........................................................passed
+]]></system-out>
 </testcase>
 </testsuite>

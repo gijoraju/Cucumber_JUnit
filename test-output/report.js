@@ -64,62 +64,81 @@ formatter.step({
   "rows": [
     {
       "cells": [
-        "Cucum001",
+        "BDD01",
         "100",
         "100"
       ],
       "line": 13
-    },
-    {
-      "cells": [
-        "Cucum002",
-        "200",
-        "200"
-      ],
-      "line": 14
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 16,
+  "line": 14,
   "name": "clicks on save",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DealCreateStepDefinition.user_is_already_in_Login_page()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 14179569337,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DealCreateStepDefinition.user_title_of_login_page_is_crm()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 26292768,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DealCreateStepDefinition.user_enters_username_and_password(DataTable)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 451280154,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "DealCreateStepDefinition.user_clicks_on_login_button()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 84634657,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "DealCreateStepDefinition.user_is_on_Homepage()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 4000154768,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealCreateStepDefinition.user_clicks_on_deals()"
+});
+formatter.result({
+  "duration": 4357589360,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealCreateStepDefinition.user_clicks_on_new()"
+});
+formatter.result({
+  "duration": 4326941764,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealCreateStepDefinition.user_enters_deal_details(DataTable)"
+});
+formatter.result({
+  "duration": 4611286017,
+  "status": "passed"
+});
+formatter.match({
+  "location": "DealCreateStepDefinition.clicks_on_save()"
+});
+formatter.result({
+  "duration": 4841253623,
+  "status": "passed"
 });
 });

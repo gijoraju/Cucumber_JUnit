@@ -1,5 +1,7 @@
 package StepDefinitions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -34,11 +36,14 @@ public class DealCreateStepDefinition {
 	}
 	
 	@Then("^user enters username and password$")
-	public void user_enters_username_and_password(DataTable arg1)  {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-	    // E,K,V must be a scalar (String, Integer, Date, enum etc)
+	public void user_enters_username_and_password(DataTable credentials)  {
+	    
+		
+		List<List<String>> data= credentials.raw();
+		
+		driver.findElement(By.xpath("//input[@placeholder='E-mail address']")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.xpath("//input[@placeholder='Password']")).sendKeys(data.get(0).get(1));
+		
 	    
 	}
 
@@ -48,36 +53,49 @@ public class DealCreateStepDefinition {
 	}
 
 	@Then("^user is on Homepage$")
-	public void user_is_on_Homepage(){
+	public void user_is_on_Homepage() throws InterruptedException{
 		System.out.println("The user is on home page");
+		
+		Thread.sleep(4000);
 		
 	}
 
 	@Then("^user clicks on deals$")
-	public void user_clicks_on_deals()  {
+	public void user_clicks_on_deals() throws InterruptedException  {
 	   
 		driver.findElement(By.xpath("//span[contains(text(),'Deals')]")).click();
+		Thread.sleep(4000);
 	}
 
 	@Then("^user clicks on new$")
-	public void user_clicks_on_new() {
+	public void user_clicks_on_new() throws InterruptedException {
 		
-		driver.findElement(By.xpath("//button[@class='ui linkedin button']//i[@class='edit icon']")).click();
-	   
+		driver.findElement(By.xpath("//button[contains(text(),'New')]")).click();
+		Thread.sleep(4000);
 	}
 
 	@Then("^user enters deal details$")
-	public void user_enters_deal_details(DataTable arg1) {
-	    // Write code here that turns the phrase above into concrete actions
-	    // For automatic transformation, change DataTable to one of
-	    // List<YourType>, List<List<E>>, List<Map<K,V>> or Map<K,V>.
-	    // E,K,V must be a scalar (String, Integer, Date, enum etc)
+	public void user_enters_deal_details(DataTable details) throws InterruptedException {
+	  
+		List<List<String>> data= details.raw();
+		
+		
+		//Title
+		driver.findElement(By.xpath("//input[@name='title']")).sendKeys(data.get(0).get(0));
+		//probability
+		driver.findElement(By.xpath("//input[@name='probability']")).sendKeys(data.get(0).get(1));
+		//Commission
+		driver.findElement(By.xpath("//input[@name='commission']")).sendKeys(data.get(0).get(2));
 	    
+		Thread.sleep(4000);
 	}
 
 	@Then("^clicks on save$")
-	public void clicks_on_save(){
+	public void clicks_on_save() throws InterruptedException{
 	    
+		driver.findElement(By.xpath("//button[@class='ui linkedin button']")).click();
+		Thread.sleep(4000);
+		driver.quit();
 	}
 
 
